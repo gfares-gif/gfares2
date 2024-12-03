@@ -3,20 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="styles.css.html">
+    <title>About - IT Insights</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6ffe6; /* Light green */
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            background-color: #ffffff; /* White background */
+            border: 2px solid #005500; /* Dark green */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #005500; /* Dark green */
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #005500; /* Dark green */
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #ffcc00; /* Dark yellow */
+            color: #005500;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ethics.html">Ethics</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div class="container">
         <h1>About Us</h1>
         <p>
             IT Insights is dedicated to providing reliable information about IT ethics, best practices, and advancements in technology. Our mission is to help individuals and professionals navigate the rapidly evolving world of information technology with confidence and responsibility.
@@ -27,9 +70,10 @@
         <p>
             Outside of academics, I enjoy going to the gym and reading, which helps me maintain a balanced perspective. This passion for technology and continuous learning ensures that IT Insights remains a trustworthy source for both seasoned professionals and newcomers in the tech world.
         </p>
-    </main>
-    <footer>
-        <p></p>
-    </footer>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="ethics.html">Ethics</a>
+        </div>
+    </div>
 </body>
 </html>
