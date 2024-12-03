@@ -4,59 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - IT Insights</title>
-    <link rel="stylesheet" href="styles.css.html">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        table {
-            width: 50%;
-            border-collapse: collapse;
-            margin: 20px auto;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6ffe6; /* Light green */
         }
-        table, th, td {
-            border: 1px solid black;
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            background-color: #ffffff; /* White background for the box */
+            border: 2px solid #005500; /* Dark green border */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
+
+        h1 {
+            color: #005500; /* Dark green */
+        }
+
+        p {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #005500; /* Dark green */
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .links a:hover {
+            background-color: #ffcc00; /* Dark yellow */
+            color: #005500;
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ethics.html">Ethics</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div class="container">
         <h1>Welcome to IT Insights</h1>
-        <p>Your source for understanding IT ethics, guidelines, and professional practices in the world of technology.</p>
-
-        <section>
-            <h2>About Gabriel Fares</h2>
-            <p>Hi! My name is Gabriel Fares, a junior majoring in BS IT. I'm passionate about technology, and Java is my favorite programming language. Outside of academics, I enjoy going to the gym and reading books.</p>
-        </section>
-
-        <h3>Quick Info</h3>
-        <table>
-            <tr>
-                <td><strong>Name</strong></td>
-                <td>Gabriel Fares</td>
-            </tr>
-            <tr>
-                <td><strong>Introduction</strong></td>
-                <td>Hello, I am a junior majoring in BS IT. My favorite programming language is Java.</td>
-            </tr>
-            <tr>
-                <td><strong>Hobbies</strong></td>
-                <td>Hobbies are going to the gym and reading books.</td>
-            </tr>
-        </table>
-    </main>
-    <footer>
-        <p></p>
-    </footer>
+        <p>Your source for understanding IT ethics, guidelines, and best practices.</p>
+        <div class="links">
+            <a href="ethics.html">Ethics</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
 </body>
 </html>
